@@ -1,3 +1,110 @@
+
+
+
+
+
+/* Pour les écrans de petite taille jusqu'à 767px de largeur */
+@media only screen and (max-width: 767px) {
+  .accueilText {
+    width: 90%; /* Réduire la largeur pour s'adapter aux petits écrans */
+  }
+
+  .scrollingText p {
+    font-size: 16px; /* Réduire la taille de la police pour les petits écrans */
+    animation-duration: 20s; /* Ralentir la vitesse de défilement pour les petits écrans */
+  }
+}
+
+  .aboutText {
+    width: 90%; /* Réduire la largeur pour s'adapter aux petits écrans */
+    text-align: center; /* Centrer le texte */
+  }
+
+  .skills {
+    font-size: 70px; /* Réduire la taille de la police pour s'adapter aux petits écrans */
+  }
+
+  .mySkills img {
+    width: 80%; /* Réduire la taille des images pour s'adapter aux petits écrans */
+    height: auto; /* Ajuster la hauteur en conséquence */
+    padding-bottom: 35px; /* Réduire l'espacement en bas de l'image */
+  }
+
+
+.etSinon {
+  width: 100%; /* Occupe la largeur complète */
+}
+
+.mySkills {
+  width: 100%; /* Occupe la largeur complète */
+  padding-bottom: 20px; /* Espacement entre les blocs */
+}
+
+.mySkills img {
+  max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de son conteneur */
+  height: auto; /* Ajustez la hauteur automatiquement pour conserver les proportions */
+  padding-bottom: 20px; /* Réduisez l'espacement en bas de l'image si nécessaire */
+}
+@media only screen and (max-width: 767px) {
+  .block {
+    flex-direction: column; /* Change la direction du flex container en colonne */
+  }
+
+  .etSinon,
+  .mySkills {
+    width: 100%; /* Occuper toute la largeur de l'écran */
+    padding-bottom: 20px; /* Espacement entre les blocs */
+  }
+
+  .mySkills img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de son conteneur */
+    height: auto; /* Ajustez la hauteur automatiquement pour conserver les proportions */
+    padding-bottom: 20px; /* Réduisez l'espacement en bas de l'image si nécessaire */
+  }
+}
+
+/* Pour les écrans de taille moyenne à grande (à partir de 768px de largeur) */
+@media only screen and (min-width: 768px) {
+  .accueilText {
+    width: 70%; /* Réduire légèrement la largeur pour les écrans de taille moyenne */
+  }
+
+  .scrollingText p {
+    font-size: 24px; /* Taille de la police pour les écrans de taille moyenne à grande */
+    animation-duration: 10s; /* Vitesse de défilement normale pour les écrans de taille moyenne à grande */
+  }
+}
+
+  .aboutText {
+    width: 60%; /* Réduire légèrement la largeur pour les écrans de taille moyenne */
+  }
+
+  .skills {
+    font-size: 80px; /* Ajuster la taille de la police pour les écrans de taille moyenne */
+  }
+
+
+/* Pour les écrans de très grande taille (à partir de 1200px de largeur) */
+@media only screen and (min-width: 1200px) {
+
+    .scrollingText p {
+        font-size: 64px; /* Taille de la police pour les écrans de taille moyenne à grande */
+        animation-duration: 10s; /* Vitesse de défilement normale pour les écrans de taille moyenne à grande */
+      }
+    }
+
+  .accueilText {
+    width: 50%; /* Élargir légèrement la largeur pour les grands écrans */
+  }
+
+  .aboutText {
+    width: 50%; /* Élargir légèrement la largeur pour les grands écrans */
+  }
+
+  .skills {
+    font-size: 100px; /* Augmenter la taille de la police pour les grands écrans */
+  }
+
 * {
   min-width: 0;
   font: inherit;
@@ -66,15 +173,15 @@ p {
 }
 
 .whatsapp {
-height: 76px;
+  height: 76px;
 }
 
 .instagram {
-    height: 66px;  
+  height: 66px;
 }
 
 .github {
-    height: 66px;
+  height: 66px;
 }
 
 .accueilText {
@@ -86,33 +193,107 @@ height: 76px;
 }
 
 /* ⁡⁢⁣⁢​‌‍‌SECOND BLOCK PYRPLE ONE ​⁡ */
- 
 
-
-.secondBlock{
-    background-color: #C4C5E3;
-    padding-top: 55px;
-} 
+.secondBlock {
+  background-color: #c4c5e3;
+  padding-top: 55px;
+}
 
 .skills {
-    font-size: 100px;
-    font-family: "League Spartan";
-    margin: 0;
-    color: #027368;
-    padding-bottom: 25px;
+  font-size: 100px;
+  font-family: "League Spartan";
+  margin: 0;
+  color: #027368;
+  padding-bottom: 25px;
 }
 
 #spanWhiteTwo {
-    color: white;
+  color: white;
 }
 
 .mySkills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.languages {
+.mySkills img {
+  width: 50%;
+  height: 50%;
+  padding-bottom: 75px;
 }
+
+/* ​‌‍‌⁡⁢⁣⁢‍𝟯𝗲𝗺𝗲 𝗕𝗟𝗢𝗖𝗞 𝗚𝗥𝗘𝗘𝗡 𝗢𝗡𝗘 ⁡​​⁡ */
+
+.block {
+  display: flex;
+}
+
+.etSinon {
+  text-align: center;
+  background-color: #027368;
+  padding-top: 55px;
+  width: 50%;
+}
+
+.title {
+  font-size: 100px;
+  font-family: "League Spartan";
+  margin: 0;
+  color: #c4c5e3;
+  padding-bottom: 25px;
+  padding-top: 55px;
+}
+
+.aboutText {
+  font-size: 27px;
+  font-family: "League Spartan";
+  margin: auto;
+  color: #c4c5e3;
+  padding-bottom: 25px;
+  padding-top: 55px;
+  width: 40%;
+  line-height: 60px;
+  text-align: left;
+  text-wrap: balance;
+}
+
+.three {
+  width: 50%;
+}
+.aboutMe {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ​‌‌‍⁡⁢⁣⁢𝗖𝗔𝗥𝗢𝗨𝗦𝗦𝗘𝗟 𝗣𝗥𝗜𝗠𝗘  ⁡​*/
+
+
+.scrollingText {
+    background-color: #c4c5e3;
+    overflow: hidden; /* Cache le dépassement du texte */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  }
+  
+  .scrollingText p {
+    display: inline-block; /* Affiche le texte en ligne */
+    animation: scrollText 10s linear infinite; /* Définit l'animation pour faire défiler le texte */
+  }
+  
+  @keyframes scrollText {
+    0% { transform: translateX(100%); } /* Départ de la droite */
+    100% { transform: translateX(-100%); } /* Fin à gauche */
+  }
+
+.prime {
+margin: 0;
+padding-top: 20px;
+padding-bottom: 20px;
+font-size: 75px;
+font-family: "Joti One";
+}
+
