@@ -9,6 +9,11 @@ require('dotenv').config()
 const app = express()
 app.use(express.static("./assets"))
 app.use(express.urlencoded({extended:true}))
+app.use(session({
+    secret: 'pascal',
+    resave: true,
+    saveUninitialized: true,
+}));
 app.use(routerMain)
 app.use(routerLogin)
 

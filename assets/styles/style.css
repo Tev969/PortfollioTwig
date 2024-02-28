@@ -1,44 +1,44 @@
 /* Pour les écrans de taille moyenne jusqu'à 991px de largeur (tablette en mode portrait) */
 @media only screen and (max-width: 991px) {
-    .etSinon,
-    .block,
-    .projectBlock,
-    .projectsButt,
-    .projectsButtTwo {
-      width: 100%; /* Occupera toute la largeur disponible */
-    }
-  
-    .etSinon {
-      padding-top: 25px; /* Ajoute un peu d'espace au-dessus de la section Et sinon */
-      text-align: center; /* Centrer le texte */
-    }
-  
-    .aboutText {
-      width: 90%; /* Réduire légèrement la largeur pour le texte */
-      margin: auto; /* Centrer le texte */
-    }
-  
-    .three {
-      display: none; /* Masquer l'image dans la section Et sinon */
-    }
-  
-    .firstBlock,
-    .secondBlock,
-    .projectBlock {
-      padding-top: 40px; /* Ajustement de l'espacement pour toutes les sections */
-    }
-  
-    .mySkills img {
-      width: 70%; /* Ajuster la taille des images dans la section Compétences */
-      height: auto; /* Ajuster la hauteur en conséquence */
-      padding-bottom: 20px; /* Espacement en bas de l'image */
-    }
-  
-    .myBtn {
-      width: 80%; /* Ajuster la largeur des boutons dans la section Projet */
-    }
+  .etSinon,
+  .block,
+  .projectBlock,
+  .projectsButt,
+  .projectsButtTwo {
+    width: 100%; /* Occupera toute la largeur disponible */
   }
-  
+
+  .etSinon {
+    padding-top: 25px; /* Ajoute un peu d'espace au-dessus de la section Et sinon */
+    text-align: center; /* Centrer le texte */
+  }
+
+  .aboutText {
+    width: 90%; /* Réduire légèrement la largeur pour le texte */
+    margin: auto; /* Centrer le texte */
+  }
+
+  .three {
+    display: none; /* Masquer l'image dans la section Et sinon */
+  }
+
+  .firstBlock,
+  .secondBlock,
+  .projectBlock {
+    padding-top: 40px; /* Ajustement de l'espacement pour toutes les sections */
+  }
+
+  .mySkills img {
+    width: 70%; /* Ajuster la taille des images dans la section Compétences */
+    height: auto; /* Ajuster la hauteur en conséquence */
+    padding-bottom: 20px; /* Espacement en bas de l'image */
+  }
+
+  .myBtn {
+    width: 80%; /* Ajuster la largeur des boutons dans la section Projet */
+  }
+}
+
 .accueilText {
   width: 50%; /* Élargir légèrement la largeur pour les grands écrans */
 }
@@ -98,9 +98,9 @@ p {
   position: relative;
 }
 .cloud {
-    position: absolute;
-    left: 0;
-    bottom: -10%;
+  position: absolute;
+  left: 0;
+  bottom: -10%;
 }
 
 .hello {
@@ -150,18 +150,15 @@ p {
 
 /* ⁡⁢⁣⁢​‌‍‌SECOND BLOCK PURPLE ONE ​⁡ */
 
-
-
 .secondBlock {
   background-color: #c4c5e3;
   padding-top: 55px;
 }
 
-
 .cloud2 {
-    position: absolute;
-    right: 0;
-    bottom: -10%;
+  position: absolute;
+  right: 0;
+  bottom: -10%;
 }
 
 .skills {
@@ -247,7 +244,6 @@ p {
   animation: scrollText 10s linear infinite; /* Définit l'animation pour faire défiler le texte */
 }
 
-
 @keyframes scrollText {
   0% {
     transform: translateX(100%);
@@ -268,17 +264,16 @@ p {
 /*​‌‌‍⁡⁢⁣⁢ ‍𝗣𝗔𝗥𝗧𝗜𝗘 𝗣𝗥𝗢𝗝𝗘𝗧𝗦 ⁡​ ⁡​*/
 
 .projectBlock {
-    position: relative;
+  position: relative;
   background-color: #f09650;
   height: 80vh;
 }
 
 .plant {
-    position: absolute;
-    right: 0;
-    top: 0%;
+  position: absolute;
+  right: 0;
+  top: 0%;
 }
-
 
 .titleprojet {
   font-size: 100px;
@@ -302,9 +297,8 @@ p {
 }
 
 .myBtn:hover {
-    background-color: #c4c5e3;
-    
-  }
+  background-color: #c4c5e3;
+}
 
 #puissance4 {
   color: #ffffff;
@@ -350,15 +344,110 @@ p {
   width: 346px;
 }
 
-
 .projectsButt {
- display: flex;
- justify-content: space-around;
- padding-top: 100px 
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
 }
 
 .projectsButtTwo {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 150px;
+}
+
+/* ⁡⁢⁣⁢​‌‌‍CONNEXION​⁡ */
+
+.formBlock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    justify-content: space-around;
-    padding-top: 150px 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f09650;
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+
+label {
+    font-size: 16px;
+    color: #333; /* Couleur du texte */
+    margin-bottom: 5px; /* Espacement en bas */
+    font-weight: bold; /* Texte en gras */
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    padding: 8px;
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 14px;
+}
+
+button {
+    background-color: #f09650;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d78142;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.send button {
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border: 1px solid white;
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #f09650; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Curseur pointer au survol */
+    transition: background-color 0.3s; /* Animation de transition */
+}
+
+.send button:hover {
+    background-color: #d78142; /* Changement de couleur au survol */
+}
+
+.mail label,
+.password label {
+    display: block; /* Pour que les labels occupent une ligne entière */
+    margin-bottom: 5px; /* Espacement entre les labels et les champs de saisie */
+    font-family: "League Spartan";
+}
+
+.mail input,
+.password input {
+    width: 100%; /* Remplir toute la largeur disponible */
+    padding: 8px; /* Espacement intérieur du champ de saisie */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+    margin-bottom: 10px; /* Espacement entre les champs de saisie */
+}
+
+.mail input,
+.password input{
+    border: none;
+    outline: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
 }

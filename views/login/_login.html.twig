@@ -1,0 +1,26 @@
+<section class="formBlock">
+	<div class="tittle">
+	</div>
+	<form action="./login" method="post">
+		<div class="mail">
+			<label for="mail">Votre mail</label>
+			<input id="mail" name="mail" type="text">
+			{% if error %}
+				<p>{{error.error.name.message}}</p>
+			{% endif %}
+		</div>
+		<div class="password">
+			<label for="pass">Votre password</label>
+			<input id="pass" name="pass" type="text">
+			{% if error %}
+				<p>{{error.error.name.message}}</p>
+			{% endif %}
+
+		</div>
+        <div class="send">
+        <button>Envoyer</button>
+        </div>
+	</form>
+
+
+</section>
