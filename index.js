@@ -1,30 +1,30 @@
-const { config } = require('dotenv')
-const express = require('express')
-const mongoose = require('mongoose')
-const routerMain = require("./src/router/routerMain")
-const routerLogin = require("./src/router/routerLogin")
-require('dotenv').config()
+const config = require("dotenv");
+const express = require("express");
+const session = require("express-session");
+const mongoose = require("mongoose");
+const routerMain = require("./src/router/routerMain");
+const routerLogin = require("./src/router/routerLogin");
+require("dotenv").config();
 
-
-const app = express()
-app.use(express.static("./assets"))
-app.use(express.urlencoded({extended:true}))
-app.use(session({
-    secret: 'pascal',
+const app = express();
+app.use(express.static("./assets"));
+app.use(express.urlencoded({ extended: true }));
+app.use(
+  session({
+    secret: "pascal",
     resave: true,
     saveUninitialized: true,
-}));
-app.use(routerMain)
-app.use(routerLogin)
+  })
+);
+app.use(routerMain);
+app.use(routerLogin);
 
+app.listen(parseInt(process.env.PORT), (err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("connected");
+  }
+});
 
-app.listen(parseInt(process.env.PORT) , (err)=>{
-     if (err) {
-          console.log(err);
-     }
-     else {
-          console.log("connected");
-     }
-})
-
-mongoose.connect(process.env.URLBDD)
+mongoose.connect(process.env.URLBDD);
