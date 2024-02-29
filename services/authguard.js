@@ -1,9 +1,10 @@
+const modelProject = require("../src/models/projectModels");
 const userModel = require("../src/models/projectModels");
 
 const authguard = async (req, res, next) => {
   try {
     if (req.session.user) {
-      let user = await userModel.findOne({ email: req.session.user.email });
+      let user = await modelProject.findOne({ id: req.session.user._id });
       if (user) {
         return next();
       }

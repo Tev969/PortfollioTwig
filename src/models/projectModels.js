@@ -1,14 +1,15 @@
 const mongoose = require("mongoose");
+const bcrypt = require('bcrypt')
 
 const userSchema = new mongoose.Schema({
   mail: {
     type: String,
-    required: [true, "prenom requis"],
+    required: [true, "mail requis"],
     unique: true,
     
     validate: {
       validator: function (v) {
-        return /^[\w-\.]+@(\[w-]+\.)+[w-]{2,4}$/g.test(v);
+        return /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/g.test(v);
       },
       message: "Enter valid email",
     },
@@ -24,15 +25,11 @@ const userSchema = new mongoose.Schema({
       message: "Enter valid password",
     },
   },
+  projectCollection : [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Projets'
+  }]
 });
 
-bcrypt.hash(this.password, 10, (error, hash) => {
-  if (error) {
-    return next(error);
-  }
-  this.password = hash;
-  next();
-});
-
-const modelProject = new mongoose.Model("user", userSchema);
+const modelProject = mongoose.model("user", userSchema);
 module.exports = modelProject;
