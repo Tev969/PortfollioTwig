@@ -1,14 +1,14 @@
 <section class="dashboardContainer">
-
-	<div>
-		<ul>
-			{% if user.id %}
-				<li><a href="/addproject">Ajouter un projet</a></li>
-				<li><a href="/modifyproject">Ajouter un projet</a></li>
-				<li><a href="/delete">Ajouter un projet</a></li>
-			</ul>
-		{% endif %}
+	<div class="welcomeText">
+		<h2>Bienvenue sur votre espace personnel</h2>
 	</div>
-
-
+	<div class="card">
+		<a href="/addproject">Ajouter un projet</a>
+	</div>
+	<div class="card">
+		<a href="/modifyproject">Modifier un projet</a>
+	</div>
+	<div class="card">
+		<a href="/delete">Supprimer un projet</a>
+	</div>
 </section>

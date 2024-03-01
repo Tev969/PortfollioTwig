@@ -1,12 +1,10 @@
 const routerLogin = require("express").Router();
-const userModel = require("../models/projectModels");
 const authguard = require("../../services/authguard");
 const bcrypt = require("bcrypt");
-const modelProject = require("../models/projectModels");
-
+const userModel = require("../models/userModels");
 routerLogin.post("/login", async (req, res) => {
   try {
-    let user = await modelProject.findOne({ email: req.body.email });
+    let user = await userModel.findOne({ email: req.body.email });
 
     if (user) {
       console.log(user);
@@ -20,12 +18,18 @@ routerLogin.post("/login", async (req, res) => {
       throw { email: "Vous n'etes pas enregistrer" };
     }
   } catch (error) {
-    res.redirect("login/_login.html.twig");
+    res.redirect("/login");
   }
 });
 
+routerLogin.get("/login", (req, res) => {
+    res.render("login/index.html.twig", {
+      title: "Connect",
+    });
+  });
+
 routerLogin.get("/dashboard", authguard, (req, res) => {
-  res.render("login/_login.html.twig", {
+  res.render("dashboard/index.html.twig", {
     title: "Connect",
   });
 });

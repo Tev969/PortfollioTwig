@@ -451,3 +451,106 @@ button:hover {
     font-size: 14px;
     margin-top: 5px;
 }
+
+
+
+/* ​‌‌‍⁡⁢⁣⁢DASH BOARD CSS⁡​ */
+
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .welcomeText {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .welcomeText h2 {
+    font-family: "League Spartan";
+    font-size: 27px;
+    color: #333;
+  }
+  
+  .card {
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    border: 1.7px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-family: "League Spartan";
+    transition: color 0.3s ease;
+  }
+  
+  .card a:hover {
+    color: #007bff;
+  }
+  
+
+  /*​‌‌‍ a⁡⁢⁣⁢dd project CSS​​ ⁡*/
+
+
+
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

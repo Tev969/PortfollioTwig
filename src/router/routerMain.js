@@ -1,6 +1,6 @@
 const routerMain = require("express").Router();
 const mongoose = require("mongoose");
-const userModel = require('../models/projectModels')
+const userModel = require('../models/userModels')
 const bcrypt = require('bcrypt')
 routerMain.get("/", (req, res) => {
      try {
