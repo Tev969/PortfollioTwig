@@ -417,10 +417,12 @@ button:hover {
     font-size: 16px; /* Taille de la police */
     cursor: pointer; /* Curseur pointer au survol */
     transition: background-color 0.3s; /* Animation de transition */
+    transition: transform 0.3s;
 }
 
 .send button:hover {
     background-color: #d78142; /* Changement de couleur au survol */
+    transform: translateY(10px);
 }
 
 .mail label,
@@ -461,7 +463,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
   }
   
   .welcomeText {
@@ -490,7 +492,7 @@ button:hover {
   .card a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 22px;
     font-family: "League Spartan";
     transition: color 0.3s ease;
   }
@@ -500,7 +502,7 @@ button:hover {
   }
   
 
-  /*​‌‌‍ a⁡⁢⁣⁢dd project CSS​​ ⁡*/
+  /*​‌‌‍ ⁡⁢⁣⁢a⁡⁡⁢⁣⁢dd project CSS​​ ⁡*/
 
 
 
@@ -538,6 +540,133 @@ button:hover {
     resize: vertical;
   }
   
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+
+  .cards-container {
+    display: flex;
+    
+    justify-content: center; /* Pour répartir les cartes horizontalement */
+  }
+  
+  .cards {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    transition: transform 0.4s;
+    transition: ease-out 0.4s;
+  }
+  
+  .cards:hover {
+    transform: translateY(-5px);
+    background-color: #c4c5e3;
+    transition: ease-out.4s;
+  }
+  
+  .cards h3 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .cards p {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .cards:hover {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    color: #d78142;
+  }
+
+
+  .delete {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete:hover {
+    background-color: #c82333;
+  }
+  
+
+
+  .update {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #026902;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete:hover {
+    background-color: #c82333;
+  }
+  
+  .container2 {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .container2 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group2 label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group2 input[type="text"],
+  .form-group2 textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group2 textarea {
+    resize: vertical;
+  }
+
   button[type="submit"] {
     display: block;
     width: 100%;

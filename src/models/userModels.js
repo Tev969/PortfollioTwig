@@ -25,10 +25,7 @@ const userSchema = new mongoose.Schema({
       message: "Enter valid password",
     },
   },
-  projectCollection : [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Projets'
-  }]
+
 });
 
 const modelProject = mongoose.model("user", userSchema);

@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 const projectSchema = mongoose.Schema({
   title: {
     type: String,
@@ -15,7 +16,12 @@ const projectSchema = mongoose.Schema({
     type: String,
     required: [true, "techno requise"],
   },
+
+  github: {
+    type: String,
+    required: [true, "github requis"],
+  },
 });
 
-const projectModel = mongoose.model('projets', projectSchema)
-module.exports = projectModel
+const ProjectModel = mongoose.model('projets', projectSchema)
+module.exports = ProjectModel

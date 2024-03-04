@@ -1,14 +1,29 @@
 <section class="dashboardContainer">
 	<div class="welcomeText">
-		<h2>Bienvenue sur votre espace personnel</h2>
+		<h2>Bienvenue sur votre espace personnel , retrouver tout vos projets ici.</h2>
 	</div>
 	<div class="card">
 		<a href="/addproject">Ajouter un projet</a>
 	</div>
-	<div class="card">
-		<a href="/modifyproject">Modifier un projet</a>
-	</div>
-	<div class="card">
-		<a href="/delete">Supprimer un projet</a>
-	</div>
 </section>
+	<div class="cards-container">
+{% for project in projects %}
+	<!-- Carte pour chaque projet -->
+
+		<div class="cards">
+			<h3>{{ project.title }}</h3>
+			<p>Description :
+				{{ project.description }}</p>
+			<p>Technologie utilisée :
+				{{ project.techno }}</p>
+			<p>Lien vers le GitHub :
+				<a href="{{ project.github }}">{{ project.github }}</a>
+			</p>
+			<div>
+				<a class="delete" href="/delete/{{project.id}}">Supprimer un projet</a>
+				<a class="update" href="/update/{{project.id}}">Modifier un projet</a>
+			</div>
+		</div>
+
+{% endfor %}
+	</div>

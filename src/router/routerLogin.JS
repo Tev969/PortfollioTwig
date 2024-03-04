@@ -2,6 +2,7 @@ const routerLogin = require("express").Router();
 const authguard = require("../../services/authguard");
 const bcrypt = require("bcrypt");
 const userModel = require("../models/userModels");
+const projectModel = require("../models/projectModel");
 routerLogin.post("/login", async (req, res) => {
   try {
     let user = await userModel.findOne({ email: req.body.email });
@@ -28,10 +29,6 @@ routerLogin.get("/login", (req, res) => {
     });
   });
 
-routerLogin.get("/dashboard", authguard, (req, res) => {
-  res.render("dashboard/index.html.twig", {
-    title: "Connect",
-  });
-});
+
 
 module.exports = routerLogin;
